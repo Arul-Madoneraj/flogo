@@ -1,0 +1,24 @@
+{
+  "name": "Test",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "description": "This is a Test Activity",
+  "ref": "github.com/Arul-Madoneraj/flogo",
+  "author": "arul.madoneraj@enfogroup.com",
+  "inputs":[
+    {
+      "name": "firstname",
+      "type": "string"
+    },
+	{
+      "name": "lastname",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "string"
+    }
+  ]
+}
