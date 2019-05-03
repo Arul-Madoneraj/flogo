@@ -5,7 +5,7 @@
   "description": "This is a Test Activity",
   "ref": "github.com/Arul-Madoneraj/flogo/Test",
   "author": "arul.madoneraj@enfogroup.com",
-  "homepage": "https://github.com/Arul-Madoneraj/flogo/tree/master/Test"
+  "homepage": "https://github.com/Arul-Madoneraj/flogo/tree/master/Test",
   "inputs":[
     {
       "name": "firstname",
