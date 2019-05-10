@@ -61,7 +61,7 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error)  {
 		fmt.Printf("error: %v\n", err)
 	}
 	
-	context.SetOutput("XML", output)
+	context.SetOutput("XML", string(output))
 
 	return true, nil
 }
