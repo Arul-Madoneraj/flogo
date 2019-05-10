@@ -66,7 +66,7 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error)  {
 	//log.Infof("String Output is [%s]",s)
 	//log.Infof("enc is [%s]",enc)
 	
-	context.SetOutput("XML", enc)
+	context.SetOutput("XML", emp)
 
 	return true, nil
 }
