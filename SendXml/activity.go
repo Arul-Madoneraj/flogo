@@ -5,7 +5,6 @@ import (
 	"github.com/TIBCOSoftware/flogo-lib/logger"
 	"encoding/xml"
 	"fmt"
-	"os"
 )
 
 //Logger
@@ -57,16 +56,12 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error)  {
 	emp := &employee{Name: transName, Street: transStreet,Postalcode: postalcode,City: city, Country: country}
 	emp.Comment = "Transformed XML" 
 	
-	enc := xml.NewEncoder(os.Stdout)
-	enc.Indent("  ", "    ")
-	if err := enc.Encode(emp); err != nil {
+	output, err := xml.MarshalIndent(emp, "  ", "    ")
+	if err != nil {
 		fmt.Printf("error: %v\n", err)
 	}
-
-	//log.Infof("String Output is [%s]",s)
-	//log.Infof("enc is [%s]",enc)
 	
-	context.SetOutput("XML", emp)
+	context.SetOutput("XML", output)
 
 	return true, nil
 }
