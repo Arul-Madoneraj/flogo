@@ -8,6 +8,9 @@ import (
 	"os"
 )
 
+//Logger
+	var log = logger.GetLogger("activity-SendXml")
+
 // MyActivity is a stub for your Activity implementation
 type MyActivity struct {
 	metadata *activity.Metadata
@@ -40,13 +43,11 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error)  {
 	
 	firstName 	:= context.GetInput("firstname").(string)
 	lastName  	:= context.GetInput("lastname").(string)
-	streetname  := context.GetInput("streetname").(string)
-	streetnumber:= context.GetInput("streetnumber").(int64)
+	streetname  	:= context.GetInput("streetname").(string)
+	streetnumber	:= context.GetInput("streetnumber").(int64)
 	postalcode	:= context.GetInput("postalcode").(int64)
 	city	  	:= context.GetInput("city").(string)
 	country   	:= context.GetInput("country").(string)
-	
-	var log = logger.GetLogger("activity-SendXml")
 	
 	transName 	:= lastName + firstName
 	transStreet	:= streetname + string(streetnumber)
