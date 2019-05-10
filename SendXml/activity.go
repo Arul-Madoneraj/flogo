@@ -36,7 +36,7 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error)  {
 		Comment 	string 		`xml:",comment"`
 		Name		string		`xml:"name"`
 		Street		string		`xml:"street"`
-		Postalcode	int64		`xml:"postalcode"`
+		Postalcode	string		`xml:"postalcode"`
 		City		string		`xml:"city"`
 		Country		string		`xml:"country"`
 	}
@@ -44,13 +44,13 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error)  {
 	firstName 	:= context.GetInput("firstname").(string)
 	lastName  	:= context.GetInput("lastname").(string)
 	streetname  	:= context.GetInput("streetname").(string)
-	streetnumber	:= context.GetInput("streetnumber").(int64)
-	postalcode	:= context.GetInput("postalcode").(int64)
+	streetnumber	:= context.GetInput("streetnumber").(string)
+	postalcode	:= context.GetInput("postalcode").(string)
 	city	  	:= context.GetInput("city").(string)
 	country   	:= context.GetInput("country").(string)
 	
-	transName 	:= lastName + firstName
-	transStreet	:= streetname + string(streetnumber)
+	transName 	:= lastName+", "+firstName
+	transStreet	:= streetname+", "+streetnumber
 	
 	log.Infof("transName is [%s], and transStreet is [%s]",transName,transStreet)
 	
@@ -64,7 +64,7 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error)  {
 	}
 
 	//log.Infof("String Output is [%s]",s)
-	log.Infof("enc is [%s]",enc)
+	//log.Infof("enc is [%s]",enc)
 	
 	context.SetOutput("XML", enc)
 
