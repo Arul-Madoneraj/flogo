@@ -5,6 +5,7 @@
   "description": "Activity to create a new XML",
   "ref": "github.com/Arul-Madoneraj/flogo/tree/master/SendXml",
   "author": "Arul Madoneraj",
+  "homepage": "https://github.com/Arul-Madoneraj/flogo/tree/master/SendXml",
   "inputs":[
     {
       "name": "firstname",
