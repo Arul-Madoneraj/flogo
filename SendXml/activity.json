@@ -2,7 +2,7 @@
   "name": "SendXml",
   "version": "0.0.1",
   "type": "flogo:activity",
-  "description": "Activity to create a new XML",
+  "description": "Activity to create a new XML from the inputs",
   "ref": "github.com/Arul-Madoneraj/flogo/tree/master/SendXml",
   "author": "Arul Madoneraj",
   "homepage": "https://github.com/Arul-Madoneraj/flogo/tree/master/SendXml",
