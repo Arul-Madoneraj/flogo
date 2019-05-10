@@ -21,11 +21,11 @@
 	},
 	{
 		"name": "streetnumber",
-		"type": "int64"
+		"type": "string"
 	},
 	{
 		"name": "postalcode",
-		"type": "int64"
+		"type": "string"
 	},
 	{
 		"name": "city",
