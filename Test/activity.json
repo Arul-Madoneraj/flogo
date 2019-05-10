@@ -7,18 +7,38 @@
   "author": "arul.madoneraj@enfogroup.com",
   "homepage": "https://github.com/Arul-Madoneraj/flogo/tree/master/Test",
   "inputs":[
-    {
-      "name": "firstname",
-      "type": "string"
-    },
+    	{
+      		"name": "firstname",
+      		"type": "string"
+    	}
 	{
-      "name": "lastname",
-      "type": "string"
-    }
+		"name": "lastname",
+		"type": "string"
+	}
+	{
+		"name": "streetname",
+		"type": "string"
+	}
+	{
+		"name": "streetnumber",
+		"type": "int64"
+	}
+	{
+		"name": "postalcode",
+		"type": "int64"
+	}
+	{
+		"name": "city",
+		"type": "string"
+	}
+	{
+		"name": "country",
+		"type": "string"
+	}
   ],
   "outputs": [
     {
-      "name": "result",
+      "name": "XML",
       "type": "string"
     }
   ]
