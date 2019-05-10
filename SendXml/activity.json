@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "type": "flogo:activity",
   "description": "Activity to create a new XML",
-  "ref": "github.com/Arul-Madoneraj/flogo/SendXml",
+  "ref": "github.com/Arul-Madoneraj/flogo/tree/master/SendXml",
   "author": "Arul Madoneraj",
   "inputs":[
     {
