@@ -1,0 +1,44 @@
+{
+  "name": "SendXml",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "description": "Activity to create a new XML",
+  "ref": "github.com/Arul-Madoneraj/flogo/SendXml",
+  "author": "Arul Madoneraj",
+  "inputs":[
+    {
+      "name": "firstname",
+      "type": "string"
+    }
+	{
+		"name": "lastname",
+		"type": "string"
+	}
+	{
+		"name": "streetname",
+		"type": "string"
+	}
+	{
+		"name": "streetnumber",
+		"type": "int64"
+	}
+	{
+		"name": "postalcode",
+		"type": "int64"
+	}
+	{
+		"name": "city",
+		"type": "string"
+	}
+	{
+		"name": "country",
+		"type": "string"
+	}
+  ],
+  "outputs": [
+    {
+      "name": "XML",
+      "type": "string"
+    }
+  ]
+}
