@@ -5,7 +5,7 @@ import (
 	"github.com/TIBCOSoftware/flogo-lib/logger"
 )
 
-	var log = logger.GetLogger("activity-helloworld")
+	var log = logger.GetLogger("activity-Test")
 
 // MyActivity is a stub for your Activity implementation
 type MyActivity struct {
