@@ -8,7 +8,7 @@ import (
 )
 
 //Logger
-	var log = logger.GetLogger("activity-SendXml")
+	//var log = logger.GetLogger("activity-SendXml")
 
 // MyActivity is a stub for your Activity implementation
 type MyActivity struct {
@@ -51,7 +51,7 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error)  {
 	transName 	:= lastName+", "+firstName
 	transStreet	:= streetname+", "+streetnumber
 	
-	log.Infof("transName is [%s], and transStreet is [%s]",transName,transStreet)
+	//log.Infof("transName is [%s], and transStreet is [%s]",transName,transStreet)
 	
 	emp := &employee{Name: transName, Street: transStreet,Postalcode: postalcode,City: city, Country: country}
 	emp.Comment = "Transformed XML" 
