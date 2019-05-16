@@ -2,7 +2,7 @@ package SendXml
 
 import (
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
-	"github.com/TIBCOSoftware/flogo-lib/logger"
+	//"github.com/TIBCOSoftware/flogo-lib/logger"
 	"encoding/xml"
 	"fmt"
 )
